@@ -3,8 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="in.reqres.GetUsersListTest"/>
-      <class name="in.reqres.GetSingleUserTest"/>
       <class name="com.rest_test.TestClass"/>
     </classes>
   </test> <!-- Test -->

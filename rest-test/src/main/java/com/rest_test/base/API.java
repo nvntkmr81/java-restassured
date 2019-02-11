@@ -1,6 +1,7 @@
 package com.rest_test.base;
 
-import static com.rest_test.Configuration.loadProperties;
+import static com.rest_APICaller.Configuration.loadProperties;
+
 import java.io.IOException;
 import java.util.Properties;
 

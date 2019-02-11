@@ -1,1 +1,26 @@
-This is log4j logger
+Test 1 for users list without parameters
+***************Request***************
+GET: https://reqres.in/api/users
+***************Response*************
+{"page":1,"per_page":3,"total":12,"total_pages":4,"data":[{"id":1,"first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},{"id":2,"first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},{"id":3,"first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"}]}
+Getr User with User ID =  2
+***************Request***************
+GET: https://reqres.in/api/users/
+***************Response*************
+{"data":{"id":2,"first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"}}
+***************Request***************
+GET: https://api.instagram.com/v1/users/search
+***************Response*************
+{"meta": {"code": 400, "error_type": "OAuthParameterException", "error_message": "Missing client_id or access_token URL parameter."}}
+***************Request***************
+GET: https://api.instagram.com/v1/users/search
+***************Response*************
+{"meta": {"code": 400, "error_type": "OAuthParameterException", "error_message": "Missing client_id or access_token URL parameter."}}
+***************Request***************
+GET: https://api.instagram.com/v1/users/search
+***************Response*************
+{"meta": {"code": 400, "error_type": "OAuthParameterException", "error_message": "Missing client_id or access_token URL parameter."}}
+***************Request***************
+GET: https://api.instagram.com/v1/users/search
+***************Response*************
+{"meta": {"code": 400, "error_type": "OAuthParameterException", "error_message": "Missing client_id or access_token URL parameter."}}
