@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="in.reqres.GetSingleUserTest">
+      <class name="in.reqres.CreateUserTest">
         <methods>
-          <include name="get_user_with_userID_test1"/>
           <include name="initializeObjectFactory"/>
+          <include name="create_user_sampleTest1"/>
         </methods>
-      </class> <!-- in.reqres.GetSingleUserTest -->
+      </class> <!-- in.reqres.CreateUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,6 @@
 package com.rest_APICaller;
 
-import com.rest_test.base.API;
+import com.rest_test.API;
 
 public class ObjectFactory {
 

@@ -1,4 +1,4 @@
-package com.rest_test;
+package com.insta;
 
 import org.testng.annotations.BeforeClass;
 

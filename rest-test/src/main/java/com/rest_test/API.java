@@ -1,4 +1,4 @@
-package com.rest_test.base;
+package com.rest_test;
 
 import static com.rest_APICaller.Configuration.loadProperties;
 

@@ -1,4 +1,4 @@
-package com.rest_test;
+package com.insta;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 
 import com.rest_APICaller.Configuration;
 import com.rest_APICaller.InstaAPICaller;
-
-import utility.Log;
 
 
 public class TestClass extends BaseTest {

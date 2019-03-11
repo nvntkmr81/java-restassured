@@ -3,13 +3,11 @@ package com.rest_APICaller;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -24,7 +22,7 @@ public class Configuration {
 	public static String environment;
 
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	@Parameters({"environment"})
 	public void initializeEnvironment(String environment) {
 

@@ -1,7 +1,6 @@
 package com.rest_APICaller;
 
 import java.util.Map;
-
 import io.restassured.RestAssured;
 import utility.Log;
 
@@ -28,5 +27,4 @@ public class InstaAPICaller extends APICaller{
 		Log.info(response);
 		return response;
 	}
-
 }

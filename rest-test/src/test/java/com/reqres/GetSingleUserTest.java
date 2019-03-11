@@ -1,4 +1,4 @@
-package in.reqres;
+package com.reqres;
 
 import java.util.HashMap;
 import java.util.Map;

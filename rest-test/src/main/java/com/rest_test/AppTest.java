@@ -1,6 +1,6 @@
 package com.rest_test;
 
-import junit.framework.Test;
+import junit.framework.*;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 

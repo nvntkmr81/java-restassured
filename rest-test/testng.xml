@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="in.reqres.GetUsersListTest"/>
-      <class name="in.reqres.GetSingleUserTest"/>
-      <class name="com.rest_test.TestClass"/>
+      <class name="com.reqres.GetUsersListTest"/>
+      <class name="com.reqres.GetSingleUserTest"/>
+      <class name="com.insta.TestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

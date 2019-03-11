@@ -1,4 +1,4 @@
-package in.reqres;
+package com.reqres;
 
 import org.testng.annotations.Test;
 
@@ -9,7 +9,7 @@ import utility.Log;
 public class GetUsersListTest extends ReqresBaseTest{
 	private static final String getUsersListInterface = "/api/users";
 	
-	@Test
+	@Test (groups = { "reqrestest", "gettest" })
 	public static void getUsersTest1(){
 		Log.info("Test 1 for users list without parameters");
 		
