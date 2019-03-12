@@ -3,6 +3,7 @@ package com.rest_APICaller;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -72,6 +73,26 @@ public class Configuration {
 		List<Object> value = JsonPath.read(Json, jsonPath);
 		return value.get(0).toString();
 	}
+	/**
+	 * 
+	 * @param Json
+	 * @param jsonPath
+	 * @return
+	 */
+	public static String[] jsonValuesExtractor(String Json, String jsonPath){
+		ArrayList<Object> values = JsonPath.read(Json, jsonPath);
+		String[] value = new String[values.size()];
+		int i=0;
+		for(Object data:values){
+			
+			System.out.println(data);
+			value[i] =  data.toString();
+			i++;
+		}
+		
+		return value;
+	}
+	
 	
 	/**
 	 * 
@@ -82,7 +103,12 @@ public class Configuration {
 	public static String jsonCreator(String json,Map<String,Object>map){
 		DocumentContext doc = JsonPath.parse(json);
 		for(String jsonPath:map.keySet()){
+			if(map.get(jsonPath).equals("missing")){
+				doc.delete(jsonPath);
+			}
+			else
 			doc.set(jsonPath, map.get(jsonPath));
+			
 		}
 		JsonObject jsonObj = new GsonBuilder().create().toJsonTree(doc.json()).getAsJsonObject();
 		

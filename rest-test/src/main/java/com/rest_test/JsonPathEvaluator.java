@@ -16,10 +16,12 @@ public class JsonPathEvaluator {
 		map.put(bookCategoryJsonPath,"Local");
 		map.put(bicycleColorJsonPath, "Green");
 		String newJson = Configuration.jsonCreator(json, map);
-		Configuration.prettyPrint(newJson);
-		System.out.println(Configuration.jsonValueExtractor(newJson, bicycleColorJsonPath));
-		System.out.println(Configuration.jsonValueExtractor(newJson, bookCategoryJsonPath));
-		
+		//Configuration.prettyPrint(newJson);
+		//System.out.println(Configuration.jsonValueExtractor(newJson, bicycleColorJsonPath));
+		String[] values = Configuration.jsonValuesExtractor(newJson, "$..author");
+		System.out.println(values[0]+","+values[1]);
+		newJson = Configuration.jsonCreator(json, map);
+		//Configuration.prettyPrint(newJson);
 	}
 
 }
